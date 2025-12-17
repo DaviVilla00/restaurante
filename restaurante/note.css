@@ -1,0 +1,29 @@
+body{
+    background-color:#FAF9F6;
+}
+#sb{
+    text-align: center;
+    color:#2E7D32;
+}
+p{
+    color:#2E7D32;
+}
+#im{
+    padding: 10px 20px;
+}
+a{
+ background-color:#2E7D32;
+  color:#FBC02D;
+  font-size: 1.20rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+a:hover{
+    background-color: #FBC02D;
+    color:#2E7D32;
+}
+.container-sat{
+  text-align: center;
+}

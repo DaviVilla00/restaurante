@@ -1,0 +1,123 @@
+@media (max-width: 480px) {
+  #contato h3 {
+    font-size: 1.6rem;
+  }
+
+  .form-contato {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+ 
+  #contato {
+    padding: 50px 20px;
+  }
+
+  #contato h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  
+  .form-contato {
+    max-width: 600px;
+    gap: 16px;
+  }
+
+  .form-contato label {
+    font-size: 1rem;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .form-contato textarea {
+    min-height: 150px;
+  }
+
+  .form-contato button {
+    font-size: 1.05rem;
+    padding: 14px;
+  }
+}
+
+#contato {
+  background-color: var(--bege);
+  padding: 45px 10px;
+}
+
+#contato h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 2.2rem;
+  color: var(--verde);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-contato {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-contato label {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-titulo);
+  font-size: 0.95rem;
+  color: var(--verde);
+}
+
+.form-contato input,
+.form-contato textarea {
+  margin-top: 6px;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 2px solid var(--verde-claro);
+  border-radius: 8px;
+  font-family: var(--fonte-texto);
+  background-color: #fff;
+}
+
+:root{
+  --bege: #FAF9F6;
+  --verde-claro: #A5D6A7;
+  --verde: #2E7D32;
+  --amarelo: #FBC02D;
+  --fonte-titulo: "Geologica", sans-serif;
+  --fonte-texto: "Inter", sans-serif;
+}
+.form-contato input:focus,
+.form-contato textarea:focus {
+  outline: none;
+  border-color: var(--verde);
+}
+
+.form-contato textarea {
+  min-height: 130px;
+  resize: none;
+}
+
+.form-contato button {
+  margin-top: 10px;
+  background-color: var(--verde);
+  color: var(--amarelo);
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: var(--fonte-titulo);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.form-contato button:hover {
+  background-color: var(--amarelo);
+  color: var(--verde);
+}

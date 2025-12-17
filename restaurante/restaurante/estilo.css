@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bege: #FAF9F6;
+  --verde-claro: #A5D6A7;
+  --verde: #2E7D32;
+  --amarelo: #FBC02D;
+  --fonte-titulo: "Geologica", sans-serif;
+  --fonte-texto: "Inter", sans-serif;
+}
+body{
+  font-family: var(--fonte-texto);
+}
+
+.container{
+  max-width: 1200px;
+ margin:0 auto;
+}
+#topo{
+  min-height: 400px;
+  padding: 20px 10px;
+  background-color: var(--bege);
+}
+.grid-topo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+#menu-topo{
+  grid-column: 2/4;
+}
+.grid-topo > h2{
+  grid-column: 2/4;
+  align-self: center;
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  font-weight: 900;
+  color: #424242;
+}
+#menu-topo > ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+#menu-topo a {
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  color: var(--verde);
+  text-decoration: none;
+  
+}
+#menu-topo a:hover{
+  color: var(--verde-claro);
+}
+#favoritos{
+  background-color: var(--verde-claro);
+  min-height: 700px;
+  padding: 20px 10px;
+
+}
+#favoritos h3{
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  color: var(--bege);
+  margin: 20px 0;
+}
+.produtos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 50px;
+
+}
+.produtos > article{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.produtos h4{
+  font-size: 1.5rem;
+  color: var(--bege);
+  font-family: var(--fonte-titulo);
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+}
+
+.produtos p{
+  font-size: 1.20rem;
+  color: var(--bege);
+  font-weight: 900;
+}
+
+.bt{
+  background-color: var(--verde);
+  color: var(--amarelo);
+  font-size: 1.20rem;
+  text-decoration: none;
+  padding: 10px 20px;
+
+}
+.bt:hover{
+  color: var(--verde);
+  background-color: var(--amarelo);
+}
+
+#nos{
+  min-height: 620px;
+  background-color: var(--bege);
+  padding: 20px 10px;
+}
+
+#nos a{
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+}
+
+#nos img{
+  grid-column: 2/3;
+}
+#nos h3{
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--verde);
+  margin: 20px 0;
+  grid-column: 1/3;
+}
+#nos p{
+  font-size: 1.5rem;
+  color:black;
+  font-weight: 900;
+  font-family: var(--fonte-titulo);
+}
+
+.grid-nos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#localiza{
+  min-height: 400 px;
+  background-color: var(--verde);
+  padding: 10px 20px;
+}
+
+#localiza h3{
+  font-family: var(--fonte-titulo);
+  font-size: 4rem;
+  font-weight: 900;
+  color:var(--bege);
+  margin: 20px 0;
+  grid-column: 1/3;
+}
+.grid-localiza{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-localiza img{
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+#localiza p{
+  color: var(--bege);
+  font-size: 1.30rem;
+}
+
+#rodape {
+  background-color: var(--bege);
+  padding: 10px 20px;
+}
+
+.grid-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rodape img {
+  max-width: 220px;
+}
+
+#redes a img {
+  width: 50px;
+}
+
+#localiza a{
+  background-color: var(--bege);
+  color: var(--amarelo);
+  font-size: 1.20rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+
+}
